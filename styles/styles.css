@@ -1,0 +1,42 @@
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 15px;
+    outline: 1px solid #000;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px 20px;
+    
+    background-color: rgb(21, 109, 80);
+    color: white;
+    text-decoration: none;
+}
+
+.submenu {
+    position: absolute;
+   
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    background-color: bisque;
+    display: none;
+}
+
+.submenu a {
+    text-decoration: none;
+}
