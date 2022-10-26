@@ -1,222 +1,294 @@
-.section {
-    padding-bottom: 50px;
+/* General styles */
+
+:root {
+  --main-color: #303030;
+  --second-color: #555555;
+  --accent-color: #ff6c00;
+  --pre-title-case: uppercase;
+  --title-first-color: #ffffff;
+  --title-second-color: #303030;
+  --button-first-color: #ffffff;
+  --button-second-color: #303030;
+  --specific-ident: 20px;
 }
 
-
-.menu {
-    padding: 20px;
-    margin: 0;
-    list-style: none;
-    display: flex;
+h1,
+h2,
+p {
+  margin: 0;
 }
 
-.menu-item {
-    position: relative;
-    margin-right: 15px;
-    outline: 1px solid #000;
+.page-body {
+  font-family: "Open Sans", sans-serif;
+  background-color: grey;
 }
 
-.menu-item:hover .submenu {
-    display: block;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
-.menu-link {
-    display: block;
-    padding: 10px 20px;
-    
-    background-color: rgb(21, 109, 80);
-    color: white;
-    text-decoration: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.submenu {
-    position: absolute;
-   
-    left: 0;
-    top: 100%;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    list-style: none;
-    background-color: bisque;
-    display: none;
+.link {
+  text-decoration: none;
 }
 
-.submenu a {
-    text-decoration: none;
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-
-
-
-
-
-
-
-.btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    border: none;
-    margin: 0;
-    padding: 10px 30px;
-    border-radius: 3px;
-    background-color: blueviolet;
-    color: #fff;
-    cursor: pointer;
-    
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 12px 20px;
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
 }
 
-.btn:hover {
-    background-color: aquamarine;
+.second-button:hover,
+.second-button:focus {
+  color: var(--button-first-color);
 }
 
-
-
-
-
-.btn::before, 
-.btn::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    display: inline-flex;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.title {
+  font-family: "Railway", sans-serif;
 }
 
-.btn::before {  
-    margin-right: 10px;
-    background-color: #000;  
+.second-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
 }
 
-.btn:hover::before,
-.btn:focus::before {
-    transform: translateY(-35px);
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: var(--pre-title-case);
 }
 
-.btn::after {
-    position: absolute;   
-    top: 50%;
-    left: 30px;    
-    transform: translateY(calc(-50% + 30px));    
-    background-color: #333333;
+/* Header styles */
+
+.page-header {
+  padding: 32px 0;
 }
 
-.btn:hover::after,
-.btn:focus::after {
-    transform: translateY(-50%);   
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.1em;
+  color: #ffffff;
 }
 
-
-
-
-
-
-
-
-.menu1 {
-    padding: 20px;
-    margin: 0;
-    list-style: none;
-    display: flex;
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
 }
 
-.menu-link1 {
-    position: relative;
-    display: block;
-    padding: 10px 20px;
-    margin-right: 15px;
-    outline: 1px solid #000;
-    text-decoration: none;
+.header-button {
+  color: var(--button-first-color);
 }
 
+/* Hero styles */
 
-
-.menu-link1::after {
- position: absolute;
- content: "";
- left: 0;
- bottom: 0;
- display: block;
- width: 100%;
- height: 4px;
- border-radius: 4px;
- background-color: aquamarine;
- opacity: 0;
- transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.hero .list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.2em;
+  color: var(--main-color);
 }
 
-.menu-link1:hover::after {
-
-    opacity: 1;
+.hero .list-link:hover,
+.hero .list-link:focus {
+  color: var(--accent-color);
 }
 
-
-
-
-
-
-.menu2 {
-    padding: 20px;
-    margin: 0;
-    list-style: none;
-    display: flex;
+.hero-description {
+  padding-top: 176px;
+  padding-left: 200px;
+  padding-right: 50px;
+  padding-bottom: 210px;
 }
 
-.menu-link2 {
-    position: relative;
-    display: block;
-    padding: 10px 20px;
-    margin-right: 15px;
-    outline: 1px solid #000;
-    text-decoration: none;
+.hero .pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--specific-ident);
 }
 
-
-
-.menu-link2::after {
- position: absolute;
- content: "";
- left: 0;
- bottom: 0;
- display: block;
- width: 100%;
- height: 4px;
- border-radius: 4px;
- background-color: aquamarine;
- transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
- transform: scaleX(0);
+.hero .title {
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: var(--title-first-color);
+  margin-bottom: var(--specific-ident);
 }
 
-.menu-link2:hover::after {
-
-transform: scaleX(1);    
-    
+.hero-text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  max-width: 360px;
 }
 
+/* About styles */
 
-
-.scene {
-    perspective: 600px;
-    width: 270px;
-    height: 120px;
-    border: 2px solid #333333;
+.about {
+  padding: 120px 0;
 }
 
-.box {
-    height: 100%;
-    background-color: aquamarine;
-    background-image: url(../img/clock.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
- 
-    transform: rotateY(0);
-    transition: transform 500ms liner;
+.about .pre-title {
+  color: var(--main-color);
+  margin-bottom: var(--specific-ident);
+}
 
-} 
+.about .title {
+  color: var(--title-second-color);
+  margin-bottom: var(--specific-ident);
+}
 
-.box:hover {
-    transform: rotateY(180);
+.about .after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+  margin-bottom: var(--specific-ident);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: calc(26 / 14);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+  margin-bottom: 42px;
+}
+
+.about-button {
+  color: var(--button-second-color);
+}
+
+/* Services styles */
+
+.services .pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--specific-ident);
+}
+
+.services .title {
+  color: var(--title-first-color);
+  margin-bottom: 44px;
+}
+
+.services-list {
+  border: 1px solid #000000;
+  padding: 30px 20px;
+}
+
+.services-list .item {
+  margin-bottom: 20px;
+}
+
+.services .text {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.services-button {
+  color: var(--button-first-color);
+}
+
+/* Benefits styles */
+
+.benefits-list .number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+  color: var(--main-color);
+}
+
+.benefits-list .sign {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--accent-color);
+}
+
+.benefits-list .text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--main-color);
+}
+
+.benefits .pre-title {
+  color: var(--main-color);
+}
+
+.benefits .title {
+  color: var(--title-second-color);
+}
+
+.benefits .after-title {
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+/* Barbers styles */
+
+.barbers .pre-title {
+  color: var(--main-color);
+}
+
+.barbers .title {
+  color: var(--title-second-color);
+}
+
+.barber-name {
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.barber-position {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* Gallery styles */
+
+.gallery .pre-title {
+  color: var(--main-color);
 }
