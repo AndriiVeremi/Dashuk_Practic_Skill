@@ -5,13 +5,19 @@
 
 .icon {    
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: brown;
+    width: 16px;
+    height: 16px;
+    
+    border: 2px solid #2a2a2a;
+    border-radius: 4px;
 }
 
 .checkbox:checked + .icon {
-    background-color: blue;
+    background-color: rgb(228, 213, 9);
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
 }
 
 
@@ -27,7 +33,7 @@
 
 
 
-.checkbox1 {
+.checkbox3 {
     appearance: none;
     position: absolute;
 }
