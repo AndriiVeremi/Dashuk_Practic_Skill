@@ -1,0 +1,53 @@
+.form {
+  padding: 20px;
+  margin: 20px;
+  width: 600px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  transition: transform 250ms linear;
+}
+
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  font: inherit;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+}
+
+
+
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../img/person.svg);
+}
+
+.form-icon:nth-child(2n) {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/email.svg);
+}
+
+.form-field:focus-within > icon {
+    background-color: blue;
+}
+
