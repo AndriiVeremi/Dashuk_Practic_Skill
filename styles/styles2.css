@@ -7,9 +7,10 @@
 
 .label::after {
   content: "";
-  display: inline-block;
-  background-color: blueviolet;
-  height: 20px;
+  display: block;
   width: 20px;
+  height: 20px;
+  background-color: brown;
+ 
   
 }
