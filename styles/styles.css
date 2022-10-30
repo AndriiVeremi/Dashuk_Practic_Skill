@@ -1,6 +1,21 @@
-.checkbox3 {
+.checkbox {
     appearance: none;
     position: absolute;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+}
+
+
+.checkbox:checked + .icon {
+    border-color: rgb(228, 213, 9);
+    background-color: rgb(228, 213, 9);
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .icon {    
@@ -12,13 +27,6 @@
     border-radius: 4px;
 }
 
-.checkbox:checked + .icon {
-    background-color: rgb(228, 213, 9);
-    background-image: url(../img/check.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-origin: border-box;
-}
 
 
 
@@ -32,8 +40,7 @@
 
 
 
-
-.checkbox3 {
+.checkbox {
     appearance: none;
     position: absolute;
 }
