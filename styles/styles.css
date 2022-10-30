@@ -1,0 +1,46 @@
+.checkbox3 {
+    appearance: none;
+    position: absolute;
+}
+
+.icon {    
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+}
+
+.checkbox:checked + .icon {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox1 {
+    appearance: none;
+    position: absolute;
+}
+
+.lable1::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+}
+
+.checkbox1:checked ~ .lable1::after {
+    background-color: blueviolet;
+}
+
