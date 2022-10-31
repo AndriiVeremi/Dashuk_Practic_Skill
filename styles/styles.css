@@ -1,3 +1,78 @@
+
+
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav__item {
+    margin-right: 20px;
+}
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}
+
+.site-nav__link {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: currentColor;
+}
+
+.site-nav__link:hover {
+    color: tomato;
+}
+
+.site-nav__icon {
+    
+}
+
+.site-nav__lable {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .checkbox {
     appearance: none;
     position: absolute;
