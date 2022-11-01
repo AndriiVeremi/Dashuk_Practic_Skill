@@ -25,14 +25,36 @@
 }
 
 .site-nav__icon {
-    
+    display: inline-block;
+    padding: 5px;
+    background-color: teal;
+    color: azure;
+    margin-right: 5px;
 }
 
-.site-nav__lable {
-
+.logo {
+}
+.logo__image {
+}
+.logo__text {
 }
 
 
+
+.card-set {
+}
+.card-ser__item {
+}
+.product {
+}
+.product__image {
+}
+.product__meta {
+}
+.product__name {
+}
+.product__price {
+}
 
 
 
