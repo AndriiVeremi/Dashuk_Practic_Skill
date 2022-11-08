@@ -20,6 +20,10 @@
     color: currentColor;
 }
 
+.site-nav__link--active {
+color: tan;
+}
+
 .site-nav__link:hover {
     color: tomato;
 }
@@ -33,29 +37,28 @@
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #2a2a2a;
 }
 .logo__image {
+    margin-left: 4px;
 }
+
 .logo__text {
 }
 
 
-
-.card-set {
-}
-.card-ser__item {
-}
-.product {
-}
-.product__image {
-}
-.product__meta {
-}
-.product__name {
-}
-.product__price {
+.page-footer {
+    background-color: rgb(41, 49, 46);
 }
 
+.page-footer__logo {
+    color: azure;
+}
 
 
 
