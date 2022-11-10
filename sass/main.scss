@@ -1,5 +1,6 @@
-@import "./components/page-header";
 @import "./components/container";
+@import "./components/page-header";
+
 
 .section {
     padding-top: 24px;
@@ -9,5 +10,50 @@
 .section-title {
     margin-top: 0;
     margin-bottom: 24px;
+}
+
+body .modal-open {
+    overflow: hidden;
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+   padding: 50px 30px;
+   overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.modal {   
+    padding: 20px;
+    background-color: #fff;
+    @media (min-width: 900px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 500px;
+        width: 100%;
+    }
+}
+
+.features-set,
+.reviews-set {
+    list-style: none;
+    padding: 0;
 }
 

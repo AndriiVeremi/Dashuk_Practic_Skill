@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body >
 
 
     <div class="page-header">
       <div class="container">
         <nav class="nav">
           <a class="company-logo" href="">Logo</a>
+          <div class="container">
+          <button type="button" data-modal-open>Відкрити</button>
+        </div>
           <button 
           type="button" 
           class="menu-button is-open"
@@ -55,7 +58,31 @@
         </div>
       </section>
 
-    </main>
+     
+
+  
+
+
+<!-- модальне вікно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg width="13" height="13" class="modal-close__icon">
+            <use href="./img/icons_old.svg#close"></use>
+          </svg>
+        </button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veniam delectus ut, eligendi tenetur maiores non aliquid numquam mollitia corrupti magni aut consequatur voluptate a exercitationem iure adipisci? Culpa, optio!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veniam delectus ut, eligendi tenetur maiores non aliquid numquam mollitia corrupti magni aut consequatur voluptate a exercitationem iure adipisci? Culpa, optio!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veniam delectus ut, eligendi tenetur maiores non aliquid numquam mollitia corrupti magni aut consequatur voluptate a exercitationem iure adipisci? Culpa, optio!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis veniam delectus ut, eligendi tenetur maiores non aliquid numquam mollitia corrupti magni aut consequatur voluptate a exercitationem iure adipisci? Culpa, optio!</p>
+       
+      </div>
+    </div>
+
+ </main>
+
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
