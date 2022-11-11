@@ -16,3 +16,7 @@
         width: 1140px;
     }
 } 
+
+body.modal-open {
+    overflow: hidden;
+}
